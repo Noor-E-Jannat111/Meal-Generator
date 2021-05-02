@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #d4c271;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+}
+
+.underline {
+  width: 50px;
+  height: 5px;
+  background-color: #000;
+}
+
+.button {
+  text-align: center;
+}
+
+.button .btn {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #92400e;
+  background-color: #92400e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button .btn:hover {
+  background-color: #79350b;
+  border: 2px solid #79350b;
+}
+
+.meals {
+  padding: 20px;
+}
+
+.meals article {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 50px;
+}
+
+.meals article .underline {
+  margin: 10px 0;
+}
+
+.meals article h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meals article img {
+  border-radius: 5px;
+}
+
+.meals article h3 {
+  margin-top: 30px;
+}
+
+@media (min-width: 640px) {
+  .meals article {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .meals article h2 {
+    text-align: left;
+  }
+
+  .meals article h3 {
+    font-size: 26px;
+  }
+
+  .meals article p {
+    font-size: 18px;
+  }
+}
